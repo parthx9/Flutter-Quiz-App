@@ -1,13 +1,19 @@
 import "package:flutter/material.dart";
 
 void main() {
-  runApp(myApp());
+  runApp(MyApp());
 }
 
-class myApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text("Hello"),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("My First App"),
+        ),
+        body: Text("This is my defualt text!"),
+      ),
     );
   }
 }
